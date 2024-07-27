@@ -53,31 +53,33 @@ button {
 }
 
 .right {
-    width: 1200px;
+    width: 800px;
     height: 700px;
     padding: 20px;
     margin: 20px;
     display: flex;
     flex-direction: column;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    align-items: flex-start;
 }
 
 .right-top {
-    width: 900px;
+    width: 700px;
     height: 300px;
     display: flex;
     flex-direction: row;
-    padding: 20px;
-    margin: 20px;
+    /* padding: 20px; */
+    margin: 20px auto; 
+
+    align-items: flex-start;
     justify-content: space-between;
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 }
 
 .right-bottom {
-    width: 900px;
+    width: 700px;
     height: 300px;
     padding: 20px;
-    margin: 20px;
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +96,7 @@ button {
 .first, .second, .third {
     width: 220px;
     height: 290px;
-    margin: -20px;
+    /* margin: -20px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
