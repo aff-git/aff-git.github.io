@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+/* end of template  */
+
+h1 {
+    color: white;
+    background-color: black;
+}
+
+img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.container {
+    margin: 0 auto; 
+    display: flex;
+    width: 1500px;
+    height: 750px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+button {
+    color: white;
+    background: green;
+    width: 150px;
+    height: 40px;
+    border: none;
+}
+
+.left {
+    width: 500px;
+    height: 700px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right {
+    width: 1200px;
+    height: 700px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.right-top {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin: 20px;
+    justify-content: space-between;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.right-bottom {
+    width: 900px;
+    height: 300px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.right-bottom h4 {
+    text-align: center;
+}
+
+
+.first, .second, .third {
+    width: 220px;
+    height: 290px;
+    margin: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+h3 {
+    color: green;
+}
+
+div > p { 
+    color: gray
+}
