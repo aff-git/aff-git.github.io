@@ -1,0 +1,33 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-image: linear-gradient(to right, #d16ba5, #cb86c2, #c5a0d7, #c3b7e5, #c8ccec, #c7d6f4, #c7e0fa, #c9e9ff, #b1eeff, #94f3ff, #77f7ff, #5ffbf1);
+    font-size: 18px;
+}
+
+.glow {
+    font-size: 20px;
+    color: white;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 50px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 20px #e60073, 0 0 20px #fff, 0 0 20px #fff;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 30px #fff, 0 0 30px #fff, 0 0 30px #ff4da6, 0 0 30px #ff4da6;
+    }
+  }
+
+
+ul > li {
+    list-style: none;
+    font-weight: 500;
+    
+}
