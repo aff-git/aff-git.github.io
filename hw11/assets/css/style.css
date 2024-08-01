@@ -18,6 +18,7 @@ body {
 .main-header > .nav {
     background: black;
     width: 1000px;
+    
 }
 .main-header > .nav > .nav-item > .nav-link {
     color: gray;
@@ -34,28 +35,28 @@ body {
 }
 
 main > .container {
-    padding: 50px; 
+    padding: 50px;
 }
 
 #grid-container {
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px;
-    /* gap: 50px; */
+    /* gap: 50px;
     row-gap: 50px;
-    column-gap: 50px;
+    column-gap: 50px; */
 
 }
 
 #grid-container {
     grid-area: container;
     grid-template: 300px / 300px 300px 300px;
-
     text-align: center;
+    gap: 50px;
 }
 
 #grid-first {
-    background-image: url('../img/handbag.jpg');
+    background-image: url('../img/handbag2.jpg');
     background-repeat: no-repeat;
     text-align: center;
 }
@@ -64,7 +65,7 @@ main > .container {
     background-image: url('../img/watch1.jpg');
     background-repeat: no-repeat;
     text-align: center;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 #grid-third {
@@ -118,15 +119,6 @@ main {
     grid-area: lower;
 }
 
-body { 
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px 300px;
-    grid-template-areas: "header header header header"
-                         "main  main    main    main"
-                         "footer footer footer footer"; */
-                        
-}
 
 .container-upper {
     grid-area: upper;
@@ -138,9 +130,8 @@ body {
 
 .main-header {
     width: 1000px;
-    box-shadow: 10px 5px 5px black;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
     z-index: 1;
-
 }
 
 .copyright {
@@ -165,19 +156,23 @@ body {
 .container-third {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
+    row-gap: 50px; /* not works */
 }
 
-#container-third > .row > .col > .card:hover {
+#container-third > .row > .col > .card > .card-body > .card-title:hover {
     color: gray;
     text-decoration-line: underline;
 }
-#container-third > .row > .col > .card > btn:hover {
+
+#container-third > .row > .col > .card > .btn:hover {
 background: gray;
 }
 
+.third, .fourth {
+    row-gap: 50px; /* doesn't works */
+}
+
 .fifth {
-    /* align-items: center; */
-    /* justify-content: center; */
     text-align: center;
 }
 .sixth {
@@ -190,7 +185,6 @@ background: gray;
 .text-wrap {
     display: flex;
     justify-content: center;
-    /* padding: 10px; */
 }
 
 .card-text-strike {
@@ -200,7 +194,16 @@ background: gray;
 
 /* Customizing cards */
 
-.card-body {
+#first-row, #second-row {
+    row-gap: 50px ;
+}
+
+.g-col-4 > .img-title {
+    color: white;
+    font-size: 24px;
 
 }
 
+.g-col-4:hover > .img-title {
+    text-decoration: underline;
+}
